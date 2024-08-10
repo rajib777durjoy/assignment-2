@@ -146,12 +146,22 @@
                 <p> calculate your BMI, divide your weight in kilograms by your height in meters squared (BMI = weight (kg) / height (m²)). For example, if you weigh 70 kg and are 1.75 meters tall, your BMI would be 22.86.</p>
                 <!--formSection start-->
                 <div class="formSection">
-                  <li><input type="text" value="Height/cm"></li>
-                  <li><input type="text" value="Weight/kg"></li>
-                  <li><input type="text" value="Age"></li>
-                  <li><input type="text" value="Sex"><i class="fa-solid fa-angle-down"></i>
+                  <li><input type="text" placeholder="Height/cm"></li>
+                  <li><input type="text" placeholder="Weight/kg"></li>
+                  <li><input type="text" placeholder="Age"></li>
+                  <li><select name="" id="">
+                    <option value="Sex">sex</option>
+                    <option value="Male">mele</option>
+                    <option value="Female">female</option>
+                  </select>
                   </li>
-                  <li class="list-factor"><input type="text" value="Select an activity factor"><i class="fa-solid fa-angle-down"></i></li>
+                  <li class="list-factor">
+                  <select name="" id="">
+                    <option value="">Select an activity factor</option>
+                    <option value="">Sports</option>
+                    <option value="">physical exercise</option>
+                  </select>
+                </li>
                 </div>
                   <!--formSection end-->
                 <button type="submit">Calculate</button>

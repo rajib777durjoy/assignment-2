@@ -364,17 +364,27 @@ body{
        gap:20px;
     }
     .mile-easily .mile-easily-content{
-        width:100%;
+        width:90%;
+    }
+    .mile-easily-content h2{
+        width:70%;
+        font-size:2rem;
     }
     .mile-easily .mile-easily-content p{
-        width:100%;
+        width:90%;
         font-size:1rem;
     }
+    .mile-easily-content>button{
+        width:300px;
+        margin-left:20px;
+    }
     .mile-easily .mile-easily-image{
-        width:100%;
+        width:90%;
+        padding-bottom:30px;
     }
     .mile-easily .mile-easily-image img{
         width:100%;
+        height:100%;
         transform: translateX(0px);
     }
 }
@@ -489,17 +499,26 @@ table td{
     border:none;
     outline:none;
     width:100%;
-    background: transparent;
+    background:transparent;
+    color:var(--color);
+    font-size:1rem;
+    margin-left:10px;
+}
+.formSection li select{
+    border:none;
+    outline:none;
+    width:100%;
+    background:transparent;
     color:var(--text-color);
     font-size:1rem;
     margin-left:10px;
 }
+.formSection li select option{
+    background-color: rgb(90, 90, 90);
+}
 .formSection .list-factor{
    grid-column: span 2;
    
-}
-.formSection li>i{
- margin:auto 5px;
 }
 .formCalculate button[type="submit"]{
     width:200px;
@@ -513,10 +532,21 @@ table td{
 }
 /* BMI-Calculator-chart resposive design */
 @media screen and (max-width:576px) {
+    .bmi-calculator-parent .calculator-chart{
+        margin-bottom:0px;
+    }
+    .calculator-chart table{
+        width:70%;
+        margin:0px auto;
+    }
     .bmi-calculator-parent{
         flex-direction: column;
     }
- 
+
+.bmi-calculator-parent .formCalculate{
+  margin-top:0px;
+  margin-left:10px;
+}
 }
 
 /* gym-tips section style */
@@ -538,6 +568,7 @@ table td{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
+    padding:10px 0px;
 }
  .step1,.step2,.step3,.step4{
     color:white;
